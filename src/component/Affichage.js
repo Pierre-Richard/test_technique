@@ -14,8 +14,12 @@ const Affichage = () => {
     return (
         <div>
             <ul>
-                {data.map((affiche) => (
-                    <Card affiche={affiche} key={affiche.id} />
+                {data.map(affiche => (
+                    <Card
+                        id={affiche.id}
+                        title={affiche.title}
+                        body={affiche.body}
+                    />
                 ))}
             </ul>
         </div>
